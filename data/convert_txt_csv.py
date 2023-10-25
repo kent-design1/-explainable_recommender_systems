@@ -2,9 +2,9 @@ import os
 import csv
 
 # Directory containing the text files
-input_directory = "/Users/user/PycharmProjects/ERS"
+input_directory = "/Users/user/Desktop/-explainable_recommender_systems/data/txtData"
 # Directory where you want to save the CSV files
-output_directory = "/Users/user/PycharmProjects/ERS"
+output_directory = "/Users/user/Desktop/-explainable_recommender_systems/data/csvData"
 
 # Ensure the output directory exists
 if not os.path.exists(output_directory):
