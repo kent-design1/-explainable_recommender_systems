@@ -33,3 +33,5 @@ Contributions to this project are welcome. Please ensure to update tests as appr
 
 License
 MIT License
+
+[![DOI](https://zenodo.org/badge/711132114.svg)](https://zenodo.org/doi/10.5281/zenodo.10496074)
