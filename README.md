@@ -1,22 +1,37 @@
-# -explainable_recommender_systems
+# Project Title: Revolutionizing Diabetes Prediction: Integrating Machine Learning with Explainable AI in Healthcare Analytics
 
 This project was created using the [EMRBots](http://www.emrbots.org/) dataset to create an Explainable Recommender System capable recommending diagnosis to be looked out for, for patients based on their test results.
 
 ## File Description
+This project involves the use of data analysis, machine learning, and visualization techniques to explain the procedures used. The notebook is structured to guide through the process of data exploration, model building, and result visualization.
 
-Here you'll find a description of each file and the order of which to view them, as well as the order the system uses to serve its purpose
+## Installation
+The project is implemented in a Jupyter Notebook. To run this notebook, ensure that you have Jupyter Notebook installed in your environment. You can install it via Anaconda or directly using PIP. The following major libraries are used:
 
-1. **README.md:** Hopefully self-explanatory
+Pandas: for data manipulation and analysis.
+NumPy: for numerical operations.
+Scikit-learn: for machine learning algorithms and model evaluation.
+Matplotlib & Seaborn: for data visualization.
+To install these libraries, you can use the following command: pip install pandas numpy scikit-learn matplotlib seaborn
 
-2. **Data:** contains the original txt files of the dataset and the csv version after conversion
-   * *txtData* : Folder containing the original txt file from the dataset
-   * *convert_txt_csv.py*: the file used to convert the txt data into csv
-   * *csvData*: Contains the datasets after conversion to csv:
-     * AdmissionsDiagnosesCorePopulatedTable.csv and LabsCorePopulatedTable.csv are the original txt files converted to csv
-     * AdmissionsDiagnosesCorePopulatedTableEdited.csv is the AdmissionsDiagnosesCorePopulatedTable.csv without time (which was deemed irrelevant) that was created in dataManipulation.py
-     * patient_for_recommendation.csv is the input, meaning it is the patient's data that we're using recommendations
-     * finalDataset.csv is the combination of the two datasets that is created in dataManipulation.py and used to calculate the cosine similarity
+## Usage
+To use this notebook:
+1. Clone or download this repository to your local machine.
+2. Ensure you have the above-mentioned libraries installed.
+3. Open the Jupyter Notebook in your environment and run the cells sequentially to understand the workflow.
 
-3. **dataManipulation.py:** a python file that manipulates AdmissionsDiagnosesCorePopulatedTable.csv and creates AdmissionsDiagnosesCorePopulatedTableEdited.csv and finalDataset.csv
-4. **main.py:** This is where the magic happens. finalDataset.csv is used together with patient_for_recommendation.csv to calculate cosine similarity and recommend diagnosis to be tested
-5. **final_recommendation.csv:** Is where you'll find the final output
+## Structure
+The notebook is divided into several sections:
+1. Data Loading and Exploration: Loading the dataset and performing initial exploratory data analysis.
+2. Feature Engineering: Preprocessing the data and preparing it for machine learning models.
+3. Model Building: Implementing various machine learning algorithms such as Logistic Regression, K-Nearest Neighbors, etc.
+4. Model Evaluation: Evaluating the performance of the models using accuracy metrics.
+5. Visualization: Visualizing the results and findings using Matplotlib and Seaborn.
+
+## Contributing
+Contributions to this project are welcome. Please ensure to update tests as appropriate.
+
+License
+MIT License
+
+[![DOI](https://zenodo.org/badge/711132114.svg)](https://zenodo.org/doi/10.5281/zenodo.10496074)
